@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="General"
+        app:iconSpaceReserved="false">
+
+        <EditTextPreference
+            android:defaultValue="Whatever you do, do it well"
+            android:key="@string/key_status"
+            android:title="@string/status"
+            app:dialogTitle="Update status"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            android:key="@string/key_auto_reply"
+            android:title="@string/auto_reply"
+            app:defaultValue="false"
+            app:iconSpaceReserved="false"
+            app:summary="Automatically reply to a message" />
+        <ListPreference
+            android:entries="@array/entries_auto_reply_time"
+            app:dependency="@string/key_auto_reply"
+            app:dialogTitle="@string/select_time"
+            app:entryValues="@array/values_auto_reply_time"
+            app:iconSpaceReserved="false"
+            app:key="@string/key_auto_reply_time"
+            app:title="@string/auto_reply_time"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            android:entries="@array/pref_auto_reply_messages"
+            app:dependency="@string/key_auto_reply"
+            app:dialogTitle="@string/select_message"
+            app:entryValues="@array/pref_auto_reply_messages"
+            app:iconSpaceReserved="false"
+            app:key="key_auto_reply_msg"
+            app:title="@string/auto_reply_message"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="App"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            app:key="@string/key_account_settings"
+            app:summary="Privacy, security"
+            app:title="@string/account_settings"
+            app:iconSpaceReserved="false"/>
+        <CheckBoxPreference
+            app:key="@string/key_auto_download"
+            app:defaultValue="false"
+            app:summary="Automatically download data when connected to wi-fi"
+            app:title="@string/auto_download"
+            app:iconSpaceReserved="false"/>
+        <SwitchPreferenceCompat
+            app:key="@string/key_new_msg_notification"
+            app:defaultValue="true"
+            app:title="@string/new_message_notification"
+            app:iconSpaceReserved="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="About"
+        app:iconSpaceReserved="false">6589yuewrZ
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:title="@string/version"
+            app:key="@string/key_version"
+            app:summary="3.5"/>
+        <Preference
+            app:title="Privacy policy"
+            app:key="@string/key_privacy_policy"
+            app:iconSpaceReserved="false">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.google.com"/>
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

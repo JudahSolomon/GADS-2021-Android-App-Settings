@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">App Settings </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_time">Select time</string>
+    <string name="select_message">Select message</string>
+    <string name="new_message_notification">New message notification</string>
+    <string name="key_my_public_info">key_my_public_info</string>
+    <string name="my_public_info">My public info</string>
+    <string name="key_logout">key_logout</string>
+    <string name="logout">Log out</string>
+    <string name="key_delete_my_account">key_delete_my_account</string>
+    <string name="delete_my_account">Delete my account</string>
+    <string name="summary_delete_my_account">This cannot be undone</string>
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/fragmentHome">
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:label="Home"
+        android:name="com.example.settingspractice.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentSettings"
+            app:destination="@id/fragmentSettings" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSettings"
+        android:label="Settings"
+        android:name="com.example.settingspractice.SettingsFragment"
+        >
+        <action
+            android:id="@+id/action_fragmentSettings_to_fragmentAccount"
+            app:destination="@id/fragmentAccount" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentAccount"
+        android:label="Account"
+        android:name="com.example.settingspractice.AccountSettingsFragment"
+        tools:layout="@layout/fragment_account_settings"/>
+
+</navigation>

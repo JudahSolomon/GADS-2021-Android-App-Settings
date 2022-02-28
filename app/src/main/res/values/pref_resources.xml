@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="key_status">key_status</string>
+    <string name="key_auto_reply">key_auto_reply</string>
+    <string name="key_auto_reply_time">key_auto_reply_time</string>
+    <string name="key_auto_reply_message">key_auto_reply_message</string>
+    <string name="key_account_settings">key_account_settings</string>
+    <string name="key_auto_download">key_auto_download</string>
+    <string name="key_new_msg_notification">key_new_msg_notification</string>
+    <string name="key_version">key_version</string>
+    <string name="key_privacy_policy">key_privacy_policy</string>
+
+    <string name="status">Status</string>
+    <string name="auto_reply">Auto reply</string>
+    <string name="auto_reply_time">Auto reply time</string>
+    <string name="auto_reply_message">Auto reply message</string>
+    <string name="account_settings">Account settings</string>
+    <string name="auto_download">Auto download</string>
+    <string name="new_msg_notification">New message notification</string>
+    <string name="version">Version</string>
+    <string name="privacy_policy">Privacy policy</string>
+
+    <string-array name="entries_auto_reply_time">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+    </string-array>
+
+    <string-array name="values_auto_reply_time">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+    </string-array>
+
+    <string-array name="pref_auto_reply_messages">
+        <item>Available</item>
+        <item>Busy</item>
+        <item>Do not disturb</item>
+        <item>Can not talk, chat only</item>
+    </string-array>
+
+    <string-array name="entries_my_public_info">
+        <item>Status</item>
+        <item>Birth date</item>
+        <item>Last seen</item>
+        <item>Read receipts</item>
+        <item>Profile picture</item>
+    </string-array>
+
+    <string-array name="values_my_public_info">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+</resources>
